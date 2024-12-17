@@ -1,0 +1,52 @@
+body {
+    background-color: #f0f0f0;
+    color: #333333;
+    font-family: 'Arial', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+section {
+    padding: 20px;
+    margin: 15px 0;
+}
+
+.content-section {
+    text-align: center;
+}
+
+.name {
+    font-size: 32px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.experience-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.experience-list li {
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.connect-links a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.connect-links a:hover {
+    text-decoration: underline;
+}
