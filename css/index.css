@@ -28,6 +28,16 @@ section {
     color: #e74c3c;
 }
 
+.experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
 .experience-list {
     list-style-type: none;
     padding: 0;
@@ -39,6 +49,17 @@ section {
     padding: 10px;
     margin: 5px 0;
     border-radius: 5px;
+}
+
+.connect {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.connect-item {
+    margin: 10px;
+    text-align: center;
 }
 
 .connect-links a {
