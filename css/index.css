@@ -106,6 +106,13 @@ ul {
         margin: 20px; 
         background-color: #fafafa; 
     }
+    .experience-list {
+        flex-direction: row; 
+    }
+
+    .experience-list li {
+        flex: 1 1 150px; 
+    }
 }
 
 /* Desktop styles */
@@ -123,5 +130,12 @@ ul {
     ul {
         padding: 30px; 
         background-color: #ffffff; 
+    }
+    .experience-list {
+        flex-direction: row; 
+    }
+
+    .experience-list li {
+        flex: 1 1 200px; 
     }
 }
