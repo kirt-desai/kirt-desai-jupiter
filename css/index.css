@@ -139,3 +139,47 @@ ul {
         flex: 1 1 200px; 
     }
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Adequate spacing between fields */
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Button Styles */
+button {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 18px; /* Larger text for easier touch */
+        padding: 16px; /* Increased padding for touch targets */
+    }
+
+    button {
+        font-size: 18px; /* Larger button text */
+        padding: 16px 24px; /* Increased button size */
+    }
+}
