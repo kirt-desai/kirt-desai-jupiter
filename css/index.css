@@ -1,7 +1,8 @@
 body {
-    background-color: #f0f0f0;
+    background-color: #41e2e7;
     color: #333333;
     font-family: 'Arial', sans-serif;
+    padding-right: 60px
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -11,6 +12,14 @@ h1, h2, h3 {
     font-size: 24px;
     font-weight: 700;
     color: #2c3e50;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 section {
@@ -39,6 +48,7 @@ section {
     margin-bottom: 20px;
 }
 .experience-list {
+    display:grid;
     list-style-type: none;
     padding: 0;
 }
@@ -49,6 +59,60 @@ section {
     padding: 10px;
     margin: 5px 0;
     border-radius: 5px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.skill-item {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.remove-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.remove-button:hover {
+    background-color: darkred;
+}
+
+/* Styling for the message list items */
+#messages ul li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#messages ul li a {
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+#messages ul li span {
+    margin-left: 10px;
+    font-style: italic;
+    color: #555;
 }
 
 .connect {
@@ -72,7 +136,6 @@ section {
     text-decoration: underline;
 }
 
-# Mobile-First Design
 
 /* Base styles for mobile devices */
 body {
