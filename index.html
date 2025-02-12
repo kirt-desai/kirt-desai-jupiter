@@ -1,85 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Kirtan Desai's Portfolio</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Welcome to my portfolio showcasing my skills and experiences.">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Kirtan Desai's portfolio showcasing skills and projects.">
+    <title>Kirtan Desai's Portfolio</title>
     <link rel="stylesheet" href="css/index.css">
+</head>
 <body>
-     <nav>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#connect">Connect</a></li>
-            <li><a href="#messages">Leave a Message</a></li>
-          </ul>
-    </nav>
-   <section id="about">
-    <h1>Kirtan Desai </h1>
-    <h2>About</h2>
-    <p>  I’m Kirtan Desai I’m currently a sophomore at UTSA, majoring in cybersecurity. My experience consists of working as an intern at Code2College Labs as a programmer of multiple languages and my other internship as a Financial Operations intern at BigCommerce. The skills and knowledge I taken away from these experiences allows me to be a worker that endeavors to help increase productivity and collaboration in my future career.  I’m hardworking, driven, and a quick thinker about the problem in front of me in a work environment. </p>
-    </section>
-  <section id="experience">
-    <h2>Experience</h2>
-    <ul>
-       <li> E-commerce website </li>
-       <li> Database </li>
-       <li> JavaScript project </li>
-       <li> Github project </li>
-       <li> Linux project </li>
-    </ul>
-  </section>
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul></ul>
-  </section>
 
-  <section id="connect">
-    <h2>Connect</h2>
-    <ul>
-        <li><a href="https://github.com/kirt-desai ">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/kirtdesai/ ">LinkedIn</a></li>
-    </ul>
-  </section> 
-      <section id="skills">
+    <nav>
+        <div class="nav-container">
+            <button class="menu-toggle">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#connect">Connect</a></li>
+                <li><a href="#messages">Leave a Message</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about">
+        <h1>Kirtan Desai</h1>
+        <h2>About</h2>
+        <p>
+            I’m Kirtan Desai, a graduate at UTSA majoring in cybersecurity. My experience includes interning at 
+            Code2College Labs as a programmer and working as a Financial Operations Intern at BigCommerce. I am a 
+            quick thinker, hardworking, and strive to enhance productivity and collaboration in my field.
+        </p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul class="experience-list">
+            <li>E-commerce website</li>
+            <li>Database Management</li>
+            <li>JavaScript Project</li>
+            <li>GitHub Collaboration</li>
+            <li>Linux Administration</li>
+        </ul>
+    </section>
+
+    <section id="skills">
         <h2>Skills</h2>
-    
-      </section>
+        <div class="skills-grid"></div>
+    </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <ul> </ul>
+        <ul></ul>
     </section>
 
-    <section>
-        
-    <h2>Leave a Message</h2>
-    <form name="leave_message">
-        <label for="usersName">Name:</label>
-        <input type="text" name="usersName" required><br>
-        
-        <label for="usersEmail">Email:</label>
-        <input type="email" name="usersEmail" required><br>
-        
-        <label for="usersMessage">Message:</label>
-        <textarea name="usersMessage" required></textarea><br>
-        
-        <button type="submit">Submit</button>
-    </form>
-        
+    <section id="connect">
+        <h2>Connect</h2>
+        <ul class="connect-links">
+            <li><a href="mailto:kirtandesai9@gmail.com">Email</a></li>
+            <li><a href="https://github.com/kirt-desai" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/kirtdesai/" target="_blank">LinkedIn</a></li>
+        </ul>
     </section>
-         <section id="messages">
-         <h2>Messages</h2>
-         <ul></ul>
+
+    <section id="messages">
+        <h2>Leave a Message</h2>
+        <form name="leave_message">
+            <label for="usersName">Name:</label>
+            <input type="text" name="usersName" required>
+
+            <label for="usersEmail">Email:</label>
+            <input type="email" name="usersEmail" required>
+
+            <label for="usersMessage">Message:</label>
+            <textarea name="usersMessage" required></textarea>
+
+            <button type="submit">Submit</button>
+            <button type="remove">Remove</button>
+        </form>
+
+        <h2>Messages</h2>
+        <ul></ul>
     </section>
-    
+
     <footer>
-    <p>&copy; 2024 Kirtan Desai. All rights reserved.</p>
-  </footer>
+        <p>&copy; 2024 Kirtan Desai. All rights reserved.</p>
+    </footer>
+
     <script src="js/index.js"></script>
-        
+
 </body>
 </html>
