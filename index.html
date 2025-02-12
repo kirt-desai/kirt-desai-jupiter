@@ -49,13 +49,24 @@
         <div class="skills-grid"></div>
     </section>
 
-    <section id="projects">
+   <section id="projects">
         <h2>Projects</h2>
-        <ul class="projects-list">
-            <li><a href="https://github.com/kirt-desai/kirt-desai-jupiter" target="_blank">Jupiter</a></li>
-            <li><a href="https://github.com/kirt-desai/APIproject" target="_blank">API</a></li>
-    </section>
+        <ul></ul>
+        <script>
+    fetch('https://api.github.com/users/kirt-desai/repos')
+        .then(response => response.json())
+        .then(data => {
+            const projectList = document.getElementById('projects').querySelector('ul');
+            data.forEach(repo => {
+                const project = document.createElement('li');
+                project.innerHTML = `<a href="${repo.html_url}" target="_blank">${repo.name}</a>`;
+                projectList.appendChild(project);
+            });
+        })
+        .catch(error => console.error('Error fetching repositories:', error));
 
+        </script>
+    </section>
     <section id="connect">
         <h2>Connect</h2>
         <ul class="connect-links">
