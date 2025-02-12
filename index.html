@@ -91,6 +91,40 @@
             <button type="submit">Submit</button>
             <button type="remove">Remove</button>
         </form>
+         <script>
+        document.querySelector('form[name="leave_message"]').addEventListener('submit', function(event) {
+            event.preventDefault();
+        
+            const usersName = event.target.usersName.value;
+            const usersEmail = event.target.usersEmail.value;
+            const usersMessage = event.target.usersMessage.value;
+        
+            const messageList = document.querySelector('#messages ul');
+            const newMessage = document.createElement('li');
+            
+            const authorLink = document.createElement('a');
+            authorLink.href = `mailto:${usersEmail}`;
+            authorLink.textContent = usersName;
+            
+            const messageText = document.createElement('span');
+            messageText.textContent = `: ${usersMessage}`;
+        
+            newMessage.appendChild(authorLink);
+            newMessage.appendChild(messageText);
+        
+            const removeButton = document.createElement('button');
+            removeButton.textContent = 'Remove';
+            removeButton.classList.add('remove-btn');
+            
+            removeButton.addEventListener('click', function() {
+                newMessage.remove();
+            });
+        
+            newMessage.appendChild(removeButton);
+            messageList.appendChild(newMessage);
+            event.target.reset();
+        });
+    </script>
 
         <h2>Messages</h2>
         <ul></ul>
